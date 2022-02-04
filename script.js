@@ -242,7 +242,7 @@ function inicia(){
     //Ini Jogador
     nave = document.getElementById("nave")
     px = pinix = tamTelaW/2
-    py = piniy = tamTelaH - (tamTelaH/4)
+    py = piniy = (tamTelaH - 100)
     vel = 6
     dx = dy = 0
     
@@ -273,7 +273,7 @@ function inicia(){
         dy = -1
     })
     document.getElementById("cima").addEventListener("touchend", function(){  
-        dx = 0
+        dy = 0
     })
 
     document.getElementById("direita").addEventListener("touchstart", function(){  
@@ -284,10 +284,10 @@ function inicia(){
     })
 
     document.getElementById("baixo").addEventListener("touchstart", function(){  
-        dx = 1
+        dy = 1
     })
     document.getElementById("baixo").addEventListener("touchend", function(){  
-        dx = 0
+        dy = 0
     })
 
      //tiro

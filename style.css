@@ -27,7 +27,7 @@ body{
     display: flex;
     position: absolute;
     justify-content: space-around;
-    font-size: 60px;
+    font-size: 75px;
     bottom: 11px;
     color: black;
 }
@@ -76,6 +76,8 @@ body{
     border: 1px solid black;
     background-image: url('space.jpg');
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #nave{
