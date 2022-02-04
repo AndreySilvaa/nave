@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="space">
+        <div style="padding: 10px;">
+            Planeta
+            <div id="barra">
+                <div id="load"></div>
+            </div>
+            <div id="contagem">
+                Bombas Restantes: 150
+            </div>
+
+            <div id="msg">
+                <h1 id="res">SAVE THE PLANET</h1>
+
+                <pre>
+Objetivo:
+Salvar o planeta de um ataque misterioso
+
+Comandos:
+  - Botões direcionais para mover a nave
+  - Botão circular para disparar o tiro
+                </pre>
+                <button id="msgbtn">JOGAR</button>
+            </div>
+
+        </div>
+        <img id="nave" src="nave_jog.gif" alt="">
+
+        <div id="controles">
+            <div id="btnfire">&#9938;</div>
+            
+            <div id="botoes">
+                <div id="esquerda">&#10132;</div>
+                <div id="cima">&#10132;</div>
+                <div id="direita">&#10132;</div>
+                <div id="baixo">&#10132;</div>
+            </div>
+        </div>
+        <audio id="myAudio">
+            <source src="tiro.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+</body>
+</html>
