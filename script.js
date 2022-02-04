@@ -269,28 +269,35 @@ function inicia(){
         dx = 0
     })
 
-    window.addEventListener("keyup", function(){
-        var tecla = event.keyCode
-        if(tecla == 37){
-            dx = 0
-        }else if(tecla == 38){
-            dy = 0
-        }else if(tecla == 39){
-            dx = 0
-        }else if(tecla == 40){
-            dy = 0
-        }
+    document.getElementById("cima").addEventListener("touchstart", function(){  
+        dy = -1
+    })
+    document.getElementById("cima").addEventListener("touchend", function(){  
+        dx = 0
     })
 
+    document.getElementById("direita").addEventListener("touchstart", function(){  
+        dx = 1
+    })
+    document.getElementById("direita").addEventListener("touchend", function(){  
+        dx = 0
+    })
+
+    document.getElementById("baixo").addEventListener("touchstart", function(){  
+        dx = 1
+    })
+    document.getElementById("baixo").addEventListener("touchend", function(){  
+        dx = 0
+    })
 
      //tiro
-     if(tecla == 32){
+     document.getElementById("btnfire").addEventListener('click', function(){
         cancelAnimationFrame(frametiro)
         var x = document.getElementById("myAudio")
         x.play()
 
         fogo()
-    }
+     })
 }
 
 window.addEventListener("load", inicia)
