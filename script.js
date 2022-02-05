@@ -139,7 +139,7 @@ function movendoBomba(){
             pb = b[x].offsetTop
             pb += 2
             b[x].style.top = pb + "px"
-            if(pb > tamTelaH - (tamTelaH/4)){
+            if(pb > tamTelaH - (tamTelaH/5)){
                 vidaPlaneta -= 10
                 criaExplosao(2, b[x].offsetLeft, null)
                 b[x].remove()
@@ -230,7 +230,7 @@ function reinicia(){
     contbomba = 150
     vidaPlaneta = 300
     px = pinix = tamTelaW/2
-    py = piniy = tamTelaH - (tamTelaH/4)
+    py = piniy = tamTelaH - (tamTelaH/5)
     jogo = true
     soltabomba()
     game()
