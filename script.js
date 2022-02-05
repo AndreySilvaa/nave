@@ -117,7 +117,7 @@ function soltabomba(){
 
 function giva(){
     if(criarbomba){
-        aleatorio =  Math.round(Math.random()*window.innerWidth)
+        aleatorio =  Math.round(Math.random()*(window.innerWidth-20))
         bomba = document.createElement("img")
         bomba.src = "bomba.gif"
         bomba.setAttribute("class", "bomba")
@@ -149,6 +149,11 @@ function movendoBomba(){
 }
 
 function criaExplosao(tipo, x, y){
+
+    if(document.getElementById("explosao" + (ie-5))){  
+        document.getElementById("explosao" + (ie-5)).remove()
+    }
+
     var explosao = document.createElement('div')
     var img = document.createElement('img')
     var audio = document.createElement('audio')
