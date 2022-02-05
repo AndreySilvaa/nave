@@ -51,8 +51,8 @@ function movenave(){
         px = 0
     }
 
-    if(py > window.innerHeight - (tamTelaH/4)){
-        py = window.innerHeight - (tamTelaH/4)
+    if(py > window.innerHeight - (tamTelaH/5)){
+        py = window.innerHeight - (tamTelaH/5)
     }else if(py < 0){
         py = 0
     }
@@ -174,7 +174,7 @@ function criaExplosao(tipo, x, y){
         att4.value = "explosao_ar.gif?"+ new Date() 
     }else{
         att2.value = 'explosaoChao'
-        att3.value = "left:" + (x-17) + "px; top:" + (tamTelaH - (tamTelaH/4)) + 'px;'
+        att3.value = "left:" + (x-17) + "px; top:" + (tamTelaH - (tamTelaH/5)) + 'px;'
         att4.value = "explosao_chao.gif?"+ new Date()
     }
 
